@@ -89,11 +89,16 @@
     "setasign/fpdf": "1.8.*",
     "setasign/fpdi": "^v2.3.6",
     "notihnio/php-multipart-form-data-parser": "*",
-    "symfony/filesystem": "^v5.4.3",
-    "league/oauth2-google": "^4.0",
-    "thenetworg/oauth2-azure": "^2.1",
-    "webklex/php-imap": "^4.0",
-    "bogdaan/open-location-code": "dev-master"
+    "symfony/filesystem": "^v5.4.3"
+  },
+  "require-dev": {
+    "zircote/swagger-php": "^4.0",
+    "php-webdriver/webdriver": "^1.8",
+    "phpunit/phpunit": "^9.5",
+    "phpunit/php-code-coverage": "^9.2",
+    "seld/jsonlint": "*",
+    "php-console/php-console": "^3.1",
+    "fr3d/swagger-assertions": "*"
   },
   "suggest": {
     "ext-imagick": "Library recommended for securing potentially dangerous graphic files",
@@ -124,6 +129,11 @@
       "Config\\": "config/",
       "Cron\\": "cron/",
       "Exception\\": "include/exceptions/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
     }
   },
   "scripts": {

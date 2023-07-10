@@ -12,6 +12,10 @@ chdir(__DIR__);
 require_once __DIR__ . '/include/main/WebUI.php';
 require_once __DIR__ . '/include/RequirementsValidation.php';
 
+
+file_put_contents('test.txt','=== $ ==='.print_r([$_GET] ,true),FILE_APPEND);
+
+
 if ('OPTIONS' === $_SERVER['REQUEST_METHOD']) {
 	\App\Controller\Headers::getInstance()->send();
 	return;
